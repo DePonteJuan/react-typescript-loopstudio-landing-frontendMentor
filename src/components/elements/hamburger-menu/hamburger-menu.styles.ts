@@ -23,6 +23,7 @@ const NavBackground = styled.div`
   z-index: 600;
   transform: ${(props) => (props.clicked ? "scale(200)" : "scale(0)")};
   transition: transform 0.8s;
+  z-index:999;
 `;
 
 const Icon = styled.span`
