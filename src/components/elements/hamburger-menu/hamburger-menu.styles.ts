@@ -2,8 +2,8 @@ import styled from "styled-components";
 const MenuLabel = styled.label`
   background-color: none;
   position: fixed;
-  top: 6.7vh;
-  right: 6vh;
+  top: 8vh;
+  right: 6.2vw;
   border-radius: 50%;
   height: 6.7vh;
   width: 6.7vw;
@@ -45,11 +45,11 @@ const Icon = styled.span`
     transition: all 0.3s;
   }
   &::before {
-    top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
+    top: ${(props) => (props.clicked ? "0" : "-0.6rem")};
     transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
   }
   &::after {
-    top: ${(props) => (props.clicked ? "0" : "0.8rem")};
+    top: ${(props) => (props.clicked ? "0" : "0.6rem")};
     transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
   }
   ${MenuLabel}:hover &::before {

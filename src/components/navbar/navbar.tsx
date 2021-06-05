@@ -1,10 +1,15 @@
-import { HamburgerMenu, Logo } from "../elements/index";
-
+import MediaQuery from "react-responsive";
+import { HamburgerMenu, Logo, NavigationDesktop } from "../elements/index";
 export default function Navbar() {
   return (
     <>
       <Logo />
-      <HamburgerMenu />
+      <MediaQuery maxWidth={992}>
+        <HamburgerMenu />
+      </MediaQuery>
+      <MediaQuery minWidth={992}>
+        <NavigationDesktop />
+      </MediaQuery>
     </>
   );
 }
