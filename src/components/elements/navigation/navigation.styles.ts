@@ -39,7 +39,7 @@ const NavigationWrapper = styled.nav<NavigationProps>`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 600;
+  z-index: 999;
   width: ${(NavigationProps) => (NavigationProps.clicked ? "100%" : "0")};
   opacity: ${(NavigationProps) => (NavigationProps.clicked ? "1" : "0")};
   transition: width 0.8s, opacity 0.8s;

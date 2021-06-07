@@ -3,9 +3,7 @@ type HeroWrapperType = {
   img: any;
 };
 const HeroWrapper = styled.div<HeroWrapperType>`
-  padding-bottom:3vh;
-  width: 100%;
-  height: 100%;
+  padding-bottom:3vh; width: 100%; height: 100%;
   background-image: url(${({ img }) => img});
   background-size: 100%;
   background-repeat: no-repeat;
