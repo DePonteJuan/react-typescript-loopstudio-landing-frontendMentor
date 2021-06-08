@@ -1,5 +1,5 @@
 import { ItemLink, List, NavigationWrapper } from "./navigation.styles";
-function Navigation({ clicked, handleClick }) {
+function Navigation({clicked, handleClick }:any) {
   return (
     <NavigationWrapper clicked={clicked}>
       <List>

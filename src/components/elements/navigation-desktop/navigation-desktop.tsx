@@ -1,10 +1,16 @@
 import { ItemLink, List, NavigationWrapper } from "./navigation-desktop.styles";
-function NavigationDesktop() {
+type NavigationDesktopProps = {
+  className: any;
+  position: string;
+};
+
+function NavigationDesktop({ className, position }: NavigationDesktopProps) {
+  console.log(position);
   return (
-    <NavigationWrapper>
+    <NavigationWrapper className={className} position={position}>
       <List>
         <li className="line-on-hover">
-          <ItemLink >About</ItemLink>
+          <ItemLink>About</ItemLink>
         </li>
         <li>
           <ItemLink>Careers</ItemLink>

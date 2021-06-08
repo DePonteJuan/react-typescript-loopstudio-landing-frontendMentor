@@ -1,4 +1,4 @@
-import { Header, About,Products } from "./components/index";
+import { Header, About,Products, Footer } from "./components/index";
 import GlobalStyle from "./globalStyles";
 export default function App() {
   return (
@@ -7,6 +7,7 @@ export default function App() {
       <Header />
       <About />
       <Products />
+      <Footer />
     </div>
   );
 }

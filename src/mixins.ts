@@ -6,14 +6,15 @@ type LineOnHoverType = {
   height: string;
   top: string;
   time: string;
+  left?: string;
 } 
-export const LineOnHover = ({color,width,height,top,time}:LineOnHoverType) => css`
+export const LineOnHover = ({color,width,height,top,time, left}:LineOnHoverType) => css`
   &::after {
     content: "";
     position: absolute;
     width: ${width};
     top: ${top};
-    left: 0;
+  left: ${left? left : 0};
     right: 0;
     height: ${height};
     background-color: ${color};
