@@ -3,8 +3,8 @@ type ProductType = {
   img: any;
 };
 const ProductsWrapper = styled.div`
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
   @media (max-width: 998px) {
     text-align: center;
   }
@@ -18,23 +18,23 @@ const Title = styled.div`
   }
 `;
 const ProductsButton = styled.button`
-border: 1px solid black;
-    text-align: center;
-    height: 3%;
-    width: 15%;
-    text-transform: uppercase;
-    background-color: transparent;
-    padding: 0.5rem;
-    &:hover {
-      background-color: black;
-      color: white;
-    }
-  @media(max-width:998px){
-width:40%;
-height:10vh;
-margin-top: 3%;
+  border: 1px solid black;
+  text-align: center;
+  height: 3%;
+  width: 15%;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 0.5rem;
+  &:hover {
+    background-color: black;
+    color: white;
   }
-`
+  @media (max-width: 998px) {
+    width: 40%;
+    height: 10vh;
+    margin-top: 3%;
+  }
+`;
 const ProductsContainer = styled.div`
   @media (min-width: 998px) {
     display: grid;
@@ -93,4 +93,4 @@ const Product = styled.div<ProductType>`
     }
   }
 `;
-export { ProductsWrapper,ProductsButton, Title, ProductsContainer, Product };
+export { ProductsWrapper, ProductsButton, Title, ProductsContainer, Product };
